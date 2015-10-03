@@ -1,8 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 /*
 *   Base body and html markup
 */
-
 *{
     box-sizing: border-box;
 }
@@ -10,8 +9,9 @@ body, html {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    background-color: #fff;
-    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
 }
 /*
 * Removing anchor tag's default behavior
@@ -59,6 +59,7 @@ header > nav > ul > li{
     margin: 0;
     background-color: #2db968;
     cursor: pointer;
+    transition: background-color 0.3s linear;
 }
 header > nav > ul > li a{
     color: #fff;
@@ -78,15 +79,18 @@ header > nav > ul > li:hover{
     padding: 20px;
     min-height: 50px;
     float: left;
+    margin-bottom: 10px;
 }
 .col{
     background-color: #ffffff;
     min-height: 50px;
-    box-shadow: 2px 2px 2px #ccc;
+    box-shadow: 3px 3px 3px #ccc;
     margin-left: 2.4%;
     margin-right: 2.4%;
+    margin-bottom: 2.4%;
     display: inline-block;
     float: left;
+    padding: 10px;
 }
 .col:first-child{
     margin-left: 0px;
@@ -131,7 +135,94 @@ header > nav > ul > li:hover{
     width: 100%;
 }
 
+.btn{
+    padding: 13px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    transition: background-color 0.3s linear;
+}
+.btn:hover{
+    background-color: #888;
+    box-shadow: 1px 1px 1px #ccc;
+}
+.btn-lg{
+    font-size: large;
+}
+.btn-sm{
+    font-size: small;
+    padding: 9px;
+}
+.btn-block{
+    width: 100% !important;
+}
+.btn-good{
+    background-color: #32ac98;
+}
+.btn-good:hover{
+    background-color: #6bd3c1;
+}
+.btn-bad{
+    background-color: #a94334;
+}
+.btn-bad:hover{
+    background-color: #d17669;
+}
+.btn-normal{
+    background-color: #189ac5;
+}
+.btn-normal:hover{
+    background-color: #43bfe9;
+}
+.grid{
+    padding: 0.5%;
+    margin-top: 0.5%;
+    margin-bottom: 3%;
+}
+.grid > .grid-heading{
+    padding: 3.5%;
+    color: #fff;
+}
+.grid-good > .grid-heading {
+    background-color: #32ac98;
+    border-left: 5px solid #1d6356;  
+}
+.grid-bad > .grid-heading {
+    background-color: #a94334;
+    border-left: 5px solid #4e1f18;  
+}
+.grid-normal > .grid-heading {
+    background-color: #189ac5;
+    border-left: 5px solid #0b4457;  
+}
+.grid-body{
+    padding-bottom: 1.5%;
+    border-bottom: 1px solid #ccc;
+}
+.grid-footer{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    float: right;
+}
+
+.jumbo{
+    font-size: 72px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #ccc;
+}
 @media (max-width: 768px){
+    .jumbo{
+        font-size: 35px;
+    }
+    header > nav > ul > li, .logo{
+    display: block;
+    text-align: center;
+    transition: transform 0.5s linear;
+    }
     .col{
         width: 100% !important;
         margin: 5px 0px 5px 0px;
