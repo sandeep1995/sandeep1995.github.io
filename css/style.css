@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/*
+*   Base body and html markup
+*/
+
+*{
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+/*
+* Removing anchor tag's default behavior
+*/
+a, a:hover, a:after, a:before, a:active {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*
+*  Initial Base width and setting them to center
+*/
+div.header, div.page {
+    width: 100%;
+    min-width: 250px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+div.header{
+    margin-bottom: 20px;
+}
+section.row{
+    background-color: #efefef;
+}
+    
+header > nav > ul{
+    margin:0;
+    background-color:  #2db968;
+    text-align: right;
+}
+
+.logo {
+    text-transform: uppercase;
+    float: left;
+    margin-left: -40px;
+}
+
+
+header > nav > ul > li{
+    display: inline-block;
+    padding: 15px;
+    margin: 0;
+    background-color: #2db968;
+    cursor: pointer;
+}
+header > nav > ul > li a{
+    color: #fff;
+    line-height: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+header > nav > ul > li:hover{
+    background-color: #12e2a4;
+}
+/*
+ * Articles responsiveness
+ *
+ */
+.row{
+    width: 100%;
+    padding: 20px;
+    min-height: 50px;
+    float: left;
+}
+.col{
+    background-color: #ffffff;
+    min-height: 50px;
+    box-shadow: 2px 2px 2px #ccc;
+    margin-left: 2.4%;
+    margin-right: 2.4%;
+    display: inline-block;
+    float: left;
+}
+.col:first-child{
+    margin-left: 0px;
+}
+.col:last-child{
+    margin-right: 0px;
+}
+.one{
+    width: 3.93%;
+}
+.two{
+    width: 12.66%;
+}
+.three{
+    width: 21.4%;
+}
+.four{
+    width: 30.13%;
+}
+.five{
+    width: 38.867%;
+}
+.six{
+    width: 47.6%;
+}
+.seven{
+    width: 56.333%;
+}
+.eight{
+    width: 65.07%;
+}
+.nine{
+    width: 73.8%;
+}
+.ten{
+    width: 82.533%;
+}
+.eleven{
+    width: 91.27%;
+}
+.twelve{
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .col{
+        width: 100% !important;
+        margin: 5px 0px 5px 0px;
+    }
+}
